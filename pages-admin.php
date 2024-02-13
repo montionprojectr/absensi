@@ -143,6 +143,12 @@ $user = mysqli_fetch_array($query);
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="bi bi-gear-fill"></i>
+          <span>Setelan</span>
+        </a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-pencil-square"></i><span>Input Data</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>

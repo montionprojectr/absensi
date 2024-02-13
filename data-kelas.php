@@ -7,12 +7,17 @@
 	      <a class="icon" href="#" data-bs-toggle="dropdown"><i class="bi bi-three-dots"></i></a>
 	      <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
 	        <li class="dropdown-header text-start">
-	          <h6>Filter</h6>
+	          <h6>Select Option</h6>
 	        </li>
 
-	        <li><a class="dropdown-item" href="#">Today</a></li>
-	        <li><a class="dropdown-item" href="#">This Month</a></li>
-	        <li><a class="dropdown-item" href="#">This Year</a></li>
+	        <li><a class="dropdown-item" href="#">Input Data</a></li>
+	        <li><a class="dropdown-item" href="#">Th 2023/2024</a></li>
+	        <li><a class="dropdown-item" href="#">Th 2024/2025</a></li>
+	        <li><a class="dropdown-item" href="#">Th 2025/2026</a></li>
+	        <li><a class="dropdown-item" href="#">Th 2026/2027</a></li>
+	        <li><a class="dropdown-item" href="#">Th 2027/2028</a></li>
+	        <li><a class="dropdown-item" href="#">Th 2028/2029</a></li>
+	        <li><a class="dropdown-item" href="#">Th 2029/2030</a></li>
 	      </ul>
 	    </div>
 
@@ -22,7 +27,7 @@
 	      <table class="table table-borderless table-striped datatable">
 	        <thead>
 	          <tr>
-	            <th scope="col">ID Rombel</th>
+	          	<th scope="col">No</th>
 	            <th scope="col">Kelas</th>
 	            <th scope="col">Jurusan</th>
 	            <th scope="col">Rombel</th>
@@ -35,7 +40,7 @@
         	$no=1;
         	while ($data = mysqli_fetch_array($query)) { ?>
         		<tr>
-        			<td><?= $data['id_rombel']; ?></td>
+        			<td><?= $no++; ?></td>
         			<td><?= $data['name_kelas']; ?></td>
         			<td><?= $data['name_jurusan']; ?></td>
         			<td><?= $data['rombel']; ?></td>
